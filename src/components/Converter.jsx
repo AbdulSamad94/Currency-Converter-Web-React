@@ -46,7 +46,7 @@ const CurrencyConverter = () => {
     <div className="currency-converter w-80 py-20 px-4 bg-white rounded-xl  shadow-xl border border-slate-300">
     <h1 className="text-2xl font-bold mb-4 text-center cursor-pointer  w-max m-auto after:content-normal after:duration-300 after:m-auto after:bg-red-600 after:mt-1 after:block after:w-0 after:h-1 after:rounded-xl hover:after:w-full">Currency Converter</h1>
     <div className="mb-4 flex justify-center items-center flex-col gap-3">
-      <input type="number" value={amount} onChange={handleAmountChange} className="p-2 border rounded cursor-pointer focus:ring-2 focus:outline-none focus:ring-indigo-600 focus:ring-offset-2" />
+      <input type="number" value={amount} onChange={handleAmountChange} className="p-2 border w-44 rounded cursor-pointer focus:ring-2 focus:outline-none focus:ring-indigo-600 focus:ring-offset-2" />
       <select value={fromCurrency} onChange={handleFromCurrencyChange} className="p-2 border rounded mx-2 cursor-pointer">
         {currencies.map((currency) => (
           <option key={currency} value={currency}>
